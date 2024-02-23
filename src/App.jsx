@@ -1,35 +1,18 @@
 import './App.css'
-import { GlobalField } from './components/forms/globalField'
-import { Paragraph } from './components/globals/Paragraph'
-import { Post } from './components/globals/Post'
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { Feed } from './pages/feed/feed';
+import { Profile } from './pages/profile/profile';
 
 function App() {
 
-
   return (
-    <>
-      <div className="posts">
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-
-        <Post/>
-      </div>
-      
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Feed />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
