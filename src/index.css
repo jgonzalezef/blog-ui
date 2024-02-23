@@ -12,7 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+body {
+  padding:0px !important;
+  margin: 0px !important;
+}
 a {
   color:black;
   font-size: 16px;
@@ -55,11 +58,25 @@ button:focus-visible {
 .not-margin{
   margin: 0px;
 }
-
+.container {
+  width: 95%;
+  margin: auto;
+}
 .d-flex-beetween {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.input-search {
+  border:1px solid #C5C5C5;
+  padding: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 

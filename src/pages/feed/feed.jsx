@@ -8,7 +8,7 @@ export function Feed() {
             <div className="feed">
                 {
                     feed.map((post,index) => (
-                        <Post /> 
+                        <Post key={index} /> 
                     ))
                 }
                 

@@ -1,12 +1,10 @@
-import './global.css';
+import './input.css';
 
-export function GlobalField ({label,placeholder,type}) {
+export function GlobalField ({label,placeholder,type,withLabel=true}) {
     return (
         <>
-            <div className="form-group">
-                <label htmlFor="" className='form-label'>{label}</label>
-                <input type={type} placeholder={placeholder} className="form-control" />
-            </div>
+            {withLabel && <label htmlFor="" className='form-label'>{label}</label>}
+            <input type={type} placeholder={placeholder} className="form-control" />
         </>  
     );
 }
