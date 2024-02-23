@@ -1,6 +1,8 @@
 import './header.css';
+
 import { GlobalField } from '../../ui/input/input';
 import { CustomLink } from '../../ui/link/customLink';
+
 import logo from "../../../assets/logo.png";
 import { FaCog } from 'react-icons/fa';
 
@@ -29,7 +31,6 @@ export function Header() {
                     </nav>
                 </div>
             </div>
-            
         </header>
     );        
 }

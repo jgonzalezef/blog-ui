@@ -12,7 +12,6 @@ function App() {
         <Route exact path="/" element={<Feed key="feed" />} />
         <Route path="/profile" element={<Profile key="profile" />} />
       </Routes>
-    
     </Router>
   );
 }
